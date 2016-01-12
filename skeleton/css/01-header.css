@@ -1,0 +1,105 @@
+/* PHASE 1: Header */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background: #eee;
+}
+
+.header {
+  border-bottom: 1px solid #ccc;
+  background-color: #f00;
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  color: white;
+  border-bottom: 1px solid #ccc;
+}
+
+.header-nav {
+  /*background-color: inherit;*/
+  margin: auto;
+  width: 900px;
+  display: block;
+  font-size: 16px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.header-nav a {
+  display: block;
+  padding: 10px 15px;
+}
+
+.header-nav a:hover {
+  background-color: black;
+}
+
+.header-nav-logo  {
+  display: block;
+  float: left;
+  /*background-color: pink;*/
+  font-weight: 700;
+  border-right: 1px solid #ccc;
+}
+
+.header-nav-list {
+  display: block;
+  float: right;
+  /*border-left: 1px solid #ccc;*/
+  /*background-color: green;*/
+}
+
+.header-nav-list > li {
+  border-left: 1px solid #ccc;
+  float: left;
+}
+
+.nav-notifications:hover .notifications-dropdown {
+  display: block;
+}
+.nav-notifications {
+  position: relative;
+}
+
+.badge:hover:after {
+  background-color: red;
+}
+
+.badge:after {
+  content: "3";
+  display: block;
+  background-color: black;
+  float: right;
+  color: white;
+  border-radius:  100%;
+  padding: 2px 6px 2px 6px;
+  margin-left: 4px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.notifications-dropdown {
+  display: none;
+  background: white;
+  white-space: nowrap;
+  position: absolute;
+  left: -1px;
+  color: black;
+  border: 1px solid #ccc;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.notifications-dropdown > li:hover {
+  color: white;
+}
+
+.notifications-dropdown > li {
+  border-top: 1px solid #ccc;
+}
+
+.notifications-dropdown li:first-child {
+  border-top: none;
+}

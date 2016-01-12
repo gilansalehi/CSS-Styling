@@ -1,0 +1,36 @@
+/* PHASE 8: Thumbs */
+
+.profile-friends {
+  margin-top: 15px;
+}
+
+.friends-list {
+
+}
+
+.friends-list li {
+  float: left;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px 10px 0 0;
+  height: 60px;
+  width: 60px;
+  position: relative;
+}
+
+.friends-list li:hover .thumb:before {
+  display: block;
+  content: attr(title);
+  padding: 5px;
+  white-space: nowrap;
+  float: left;
+  position: absolute;
+  min-width: 50px;
+  overflow: hidden;
+  top: -30px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+}
